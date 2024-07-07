@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+}
+
+
+img {
+    width: 20vh;
+    justify-content: center;
+    margin-top: 10px
+}
+nav{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    justify-self: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    border:solid black 1px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 5px;
+    background-color: black;
+}   
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.detalleProducto{
+    margin: auto;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+     align-items: center; 
+     box-shadow:0 0 10px rgba(150, 142, 173, 0.973);
+     padding: 10px;
+}
+
+
+div.producto{
+    box-shadow:0 0 10px rgba(150, 142, 173, 0.973);
+    padding: 10px;
+    margin: 5px 5px ;
+    margin-bottom: 20px;
+    width: 250px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    /* flex-grow: 1; */
+    transition: 0.5s;
+}
+
+div.producto:hover{
+    transform: scale(1.05);
+}
+
+div.link{
+    margin-top: 20px;
+}
+button.submit{
+    margin-top: 10px;
+}
+
+.CategoriaLink{
+    color: black;
+    background-color: white;
+    border: none;
+}
+
+.CategoriaLink:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+.AgregarAlCarrito{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    margin: 5px 5px;
+}
+
+.productosSeleccionados {
+    display: flex;
+    flex-wrap: wrap;
+}
+.FinalizarCompra {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    margin: 5px 5px;
+}
+
+.FinalizarCompra:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.AgregarAlCarrito:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+form .checkboxContainer {
+    display: flex;
+}
+
+#botonRecuperar {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+#botonRecuperar:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+#IrAlLogin {
+    color: black;
+    background-color: white;
+    border-color:white; 
+}
+
+#IrAlLogin:hover {
+    text-decoration: underline;
+    opacity: 0.5; 
+}
+
+section img{
+    width: 200px;
+}
+
+/* pongo el display en block (bloque) para que ocupe todo el renglon, porque con inline uno de los botones queda cortado */
+section a{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* padre del formulario login */
+main.bigBox{
+    display: flex;
+    justify-content: center;
+}
+/* hijo del formulario login (contiene los inputs, label, etc.) */
+section.box{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow:0 0 10px rgba(150, 142, 173, 0.973);
+    padding: 10px;
+    border-radius: 5px;
+}
+label{
+    display: block;
+    margin-top: 10px;
+}
+input.submit{
+    display: block;
+    margin: 10px 0 10px 0;
+}
+body {
+    background-color: white;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 3px;
+    color: white;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header{
+        display: block;
+    }
+    nav{
+        display: block;
+        height: auto;
+    }
+    a{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 460px) {
+    header{
+        display: block;
+    }
+    nav{
+        display: block;
+        height: auto;
+    }
+    a{
+        display: block;
+        text-align: center;
+    }
+}

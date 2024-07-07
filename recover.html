@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar contraseña</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/logo2.jpg" type="image/jpg">
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo2.jpg" alt="logo">
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./category.html?categoria=electronics">Electronica</a>
+            <a href="./category.html?categoria=men's clothing">Hombre</a>
+            <a href="./category.html?categoria=women's clothing">Mujer</a>
+            <a href="./cart.html">Carrito</a>
+            <a href="./login.html">Login</a>
+            <a href="./register.html">Registro</a>
+            <a href="./recover.html">Recuperar Contraseña</a>
+        </nav>
+    </header>
+    <hr>
+    <div>
+        <main class="bigBox">
+            <section class="box">
+                <h2>Recuperar contraseña</h2>
+                <form id="recuperarContraseña" method="get">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="">
+                    <div class="checkboxContainer">
+                        <label for="checkbox">Quiero recuperar mi contraseña</label>
+                        <input type="checkbox" id="checkbox" name="checkbox" value="">
+                    </div>
+                    <button type="submit" id="botonRecuperar">Recuperar</button>
+
+                    <p id="aviso"></p>
+
+                    <a href="login.html" id="IrAlLogin">Ir al login</a>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <hr>
+    <footer>
+        <p>MBertozzi - 2024</p>
+    </footer>
+
+    <script src="./js/recover.js"></script>
+
+
+</body>
+
+</html>

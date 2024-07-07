@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/logo2.jpg" type="image/jpg">
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo2.jpg" alt="logo">
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./category.html?categoria=electronics">Electronica</a>
+            <a href="./category.html?categoria=men's clothing">Hombre</a>
+            <a href="./category.html?categoria=women's clothing">Mujer</a>
+            <a href="./cart.html">Carrito</a>
+            <a href="./login.html">Login</a>
+            <a href="./register.html">Registro</a>
+            <a href="./recover.html">Recuperar Contraseña</a>
+        </nav>
+    </header>
+    <hr>
+    <div>
+        <main class="bigBox">
+            <section class="box">
+                <h2>Registro</h2>
+
+                <form action="./login.html" method="get">
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" value="">
+                        <span class="emailSpan" style="display: none;">Por favor complete el campo</span>
+                    </div>
+
+                    <div class="contraseña">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" value="">
+                        <span class="contraseñaSpan" style="display: none;">Por favor complete el campo</span>
+                        <span class="contraseñaSpan2" style="display: none;">Debe ingresar al menos 6 caracteres</span>
+                    </div>
+
+                    <div class="RepetirContraseña">
+                        <label for="confirm-password">Repetir contraseña:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" value="">
+                        <span class="repetirContraseñaSpan" style="display: none;">Las contraseñas no coinciden</span>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Registrarme" class="submit">
+                        <input type="checkbox" name="terms">Acepto los terminos y condiciones
+                        <a href="login.html"> Ya tengo cuenta</a>
+                    </div>
+                </form>
+    </div>
+    </section>
+    </main>
+    <hr>
+    <footer>
+        <p>MBertozzi - 2024</p>
+    </footer>
+
+    <script src="./js/register.js"></script>
+
+</body>
+
+</html>
